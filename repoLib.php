@@ -11,5 +11,15 @@ class XeSoft
 		}
 	}
 	
-	
+	public function genIndex($server_address, $repo_name, $packages_path, $xenonos_version)
+	{
+		print("<eyePorts>\r\n");
+		print("<portServer>\r\n");
+		print("<address>".$server_address."</address>\r\n");
+		print("<name>".$repo_name."</name>\r\n");
+		print("<path>".$packages_path."</path>\r\n");
+		print("<version>".$xenonos_version."</version>\r\n");
+		print("</portServer>\r\n");
+		print("</eyePorts>");
+	}
 }
