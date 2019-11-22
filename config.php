@@ -9,4 +9,4 @@ const XESOFT_REPO_NAME = "XenonOS Software Repository";
 
 const XESOFT_PACKAGES_PATH = "/packages.xml";
 
-const XESOFT_XENONOS_VERSION = "";
+const XESOFT_XENONOS_VERSION = "1.0.2alpha";
