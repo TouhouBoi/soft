@@ -6,7 +6,7 @@
  ##   ##  ##       ##   ### ##     ## ##   ### ##     ## ##    ##
 ##     ## ######## ##    ##  #######  ##    ##  #######   ######
 
-XenonOS Applications Repository
+XenonOS Applications Repository Server / XeSoft Repo Server
 
 XenonOS is a fork of the oneye project.
 XenonOS Copyright © 2019 Trinity (touhouboi@protonmail.com)
