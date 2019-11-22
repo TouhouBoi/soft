@@ -4,3 +4,5 @@
 */
 
 const XESOFT_SERVER_ADDRESS = "";
+
+const XESOFT_REPO_NAME = "";
