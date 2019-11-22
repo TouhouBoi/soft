@@ -1,4 +1,3 @@
 <?php
-header('Content-Type: text/plain');
-
-?>
+require("config.php");
+require("repoLib.php");
