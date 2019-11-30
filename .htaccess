@@ -3,3 +3,4 @@ RewriteBase /
 RewriteEngine On
 
 RewriteRule ^$ index.php
+RewriteRule ^packages.xml$ packages.php
