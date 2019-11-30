@@ -3,7 +3,7 @@
 <packages>
 	<package>
 		<name>Example</name>
-		<filename>packages/Example.eyepackage</filename>
+		<filename>packages/Example.xepackage</filename>
 		<category>Administration</category>
 		<version>1.0</version>
 		<description>Example Description.</description>
