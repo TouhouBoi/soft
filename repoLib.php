@@ -1,6 +1,17 @@
 <?php
 class XeSoft
 {
+	public function connectDB($server, $user, $pass, $dbname) {
+		$mysql = new mysqli($server, $user, $pass, $dbname);
+		$mysql->set_charset('utf8mb4');
+		if($mysql->connect_errno){
+			http_response_code(502); die("MySQL Database Connection Failed!");
+		}
+		$mysql->query('SET time_zone = "-4:00"');
+		date_default_timezone_set('America/New_York');
+		return($mysql);
+	}	
+	
 	public function setHeaderType($headerType = 1)
 	{
 		$header_1 = "Content-Type: text/plain";
