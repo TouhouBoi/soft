@@ -33,4 +33,30 @@ class XeSoft
 		print("</portServer>\r\n");
 		print("</eyePorts>");
 	}
+
+	public function genPackages($server_address, $path = "", $mysql)
+	{
+		$packages_query = $mysql->query("SELECT * FROM packages");
+		print("<address>".$server_address."</address>\r\n");
+		print("<path>".$path."</path>\r\n");
+		print("<packages>\r\n");
+		while($packages = $packages_query->fetch_assoc())
+		{
+			print("<package>\r\n");
+			print("<name>".$packages['name']."</name>\r\n");
+			print("<filename>".$packages['filename']."</filename>\r\n");
+			print("<category>".$packages['category']."</category>\r\n");
+			print("<version>".$packages['version']."</version>\r\n");
+			print("<description>".$packages['description']."</description>\r\n");
+			print("<author>".$packages['author']."</author>\r\n");
+			print("<license>".$packages['license']."</license>\r\n");
+			print("<size>".$packages['size']."</size>\r\n");
+			print("<sha256>".$packages['sha256']."</sha256>\r\n");
+			print("<dependencies>".$packages['dependencies']."</dependencies>\r\n");
+			print("<suggestions>".$packages['suggestions']."</suggestions>\r\n");
+			print("<type>".$packages['type']."</type>\r\n");
+			print("</package>\r\n");
+		}
+		print("</packages>\r\n");
+	}
 }
