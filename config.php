@@ -10,3 +10,9 @@ const XESOFT_REPO_NAME = "XenonOS Software Repository";
 const XESOFT_PACKAGES_PATH = "/packages.xml";
 
 const XESOFT_XENONOS_VERSION = "1.0.2alpha";
+
+// MYSQL
+const MYSQL_SERVER = "localhost:3306";
+const MYSQL_USER = "root";
+const MYSQL_PASS = "";
+const MYSQL_DB = "xesoft";
