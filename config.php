@@ -7,7 +7,7 @@ const XESOFT_SERVER_ADDRESS = "repo.example.com";
 
 const XESOFT_REPO_NAME = "XenonOS Software Repository";
 
-const XESOFT_REPO_VERSION = "1.0.2alpha";
+const XESOFT_REPO_VERSION = "1.0.0alpha";
 
 const XESOFT_PACKAGES_PATH = "/packages.xml";
 
